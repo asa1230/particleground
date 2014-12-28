@@ -3,24 +3,27 @@ Particleground
 
 A jQuery plugin for snazzy background particle systems. Includes an optional parallax effect controlled by the mouse on desktop devices and gyroscope on mobile devices. Works in any browser that supports HTML5 canvas.
 
-[See a demo](https://jnicol.github.io/particleground)
+动态粒子随机连接的背景效果，包含鼠标经过背景时候的反响经过和移动设备的滑动效果。
+如果运行在高级浏览器，支持canvas
 
-## Usage
+[DEMO地址](https://jnicol.github.io/particleground)
+
+## 使用方法
 
     $('#your-element').particleground();
 
-## Options
+## 选项
 
-Options can be set by passing an options object to the constructor.
+你可以通过粘贴下面的示例，来熟悉了解选项功能。
 
-Here is an example of setting the color of the particle system dots and lines:
+这里有一个设置粒子和连接线条颜色的示例：
 
     $('#your-element').particleground({
         dotColor: '#ff0000',
         lineColor: '#ff0000'
     });
 
-Here is a full list of options, and their default values:
+下面是所有选项的功能清单和主要的参数：
 
 ### minSpeedX
 
@@ -42,7 +45,7 @@ Here is a full list of options, and their default values:
 
     'center'
 
-Can be one of `'center'`, `'left' or `'right'`. `'center'` means that the dots will bounce off the edges of the canvas.
+center'`, `'left' or `'right'`. `'center'` 这几个参数是设置粒子圆圈的碰撞的边缘
 
 ### directionY
 
@@ -54,7 +57,7 @@ Can be one of `'center'`, `'up'` or `'down'`. `'center'` means that the dots wil
 
     10000
 
-Determines how many particles will be generated: one particle every n pixels.
+设置生产粒子圆圈的数量：可以理解尾，一个粒子有多少个像素
 
 ### dotColor
 
@@ -68,7 +71,7 @@ Determines how many particles will be generated: one particle every n pixels.
 
     7
 
-Dot size
+粒子的半径
 
 ### lineWidth
 
