@@ -83,7 +83,7 @@ Can be one of `'center'`, `'up'` or `'down'`. `'center'` means that the dots wil
 
     100
 
-How close two dots need to be, in pixels, before they join.
+两个粒子之间产生线条的最大单位。低于该值，会自动链接，否则不连接
 
 ### parallax
 
@@ -95,38 +95,41 @@ How close two dots need to be, in pixels, before they join.
 
 The lower the number, the more extreme the parallax effect wil be.
 
+
 ### onInit
 
     function() {}
 
-A callback executed after Particleground initializes.
+初始化的回调函数
 
 ### onDestroy
 
     function() {}
 
-A callback executed after Particleground is destroyed.
+删除后的调用函数
 
-## Methods
+## 方法
 
 ### pause
 
-Pauses the particle system.
+暂停粒子效果
 
     $('#your-element').particlegound('pause');
 
 ### start
 
-Restarts the particle system if you previously paused it.
+暂停后，可通过"start"重新开启效果
 
     $('#your-element').particlegound('start');
 
 ### destroy
 
-Removes the plugin from your element.
+从html元素中删除插件效果
 
     $('#your-element').particlegound('destroy');
 
-## Credits
+## 声明
 
-Particleground was inspired by http://requestlab.fr/ and http://disruptivebydesign.com/ 
+该效果的启发来自以下网址：  http://requestlab.fr/ 
+
+http://disruptivebydesign.com/ 
