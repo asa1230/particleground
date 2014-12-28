@@ -1,7 +1,5 @@
-Particleground
+随机粒动态子连接
 ==============
-
-A jQuery plugin for snazzy background particle systems. Includes an optional parallax effect controlled by the mouse on desktop devices and gyroscope on mobile devices. Works in any browser that supports HTML5 canvas.
 
 动态粒子随机连接的背景效果，包含鼠标经过背景时候的反响经过和移动设备的滑动效果。
 如果运行在高级浏览器，支持canvas
